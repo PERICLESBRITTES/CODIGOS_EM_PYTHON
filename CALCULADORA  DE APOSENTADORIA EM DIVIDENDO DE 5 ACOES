@@ -1,0 +1,211 @@
+
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+ini1=float(input (" Infome seu investimento inicial : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+
+apo1=float(input (" Infome quanto você vai aportar todo mês : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+anos=int(input (" Infome quantos anos voçe irá investir : "))
+print(" ")
+temp1=anos
+temp2=(temp1*12)
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+#1
+print(" ")
+val_acao1=float(input (" Infome quanto vale a ação 1 : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+print(" Não precisa colocar o sinal de porcentagem ( % ), informe apenas com numero")
+print(" ")
+d_yield1=float(input (" Infome quanto é o Dividend Yield da ação 1 : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+dividendo1=float(input (" Infome quanto é o Dividendo distribuido ultimamente pela ação 1 : "))
+print(" ")
+print(" ")
+prco_teto_med1=float(dividendo1/0.06)
+prco_teto_med1=round(prco_teto_med1,2)
+print(" O preço teto médio da ação 1 é de  R$",prco_teto_med1,"Reais")
+print(" ")
+print(" ")
+#1
+
+#2
+print(" ")
+val_acao2=float(input (" Infome quanto vale a ação 2 : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+print(" Não precisa colocar o sinal de porcentagem ( % ), informe apenas com numero")
+print(" ")
+d_yield2=float(input (" Infome quanto é o Dividend Yield da ação 2 : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+dividendo2=float(input (" Infome quanto é o Dividendo distribuido ultimamente pela ação 2: "))
+print(" ")
+print(" ")
+prco_teto_med2=float(dividendo2/0.06)
+prco_teto_med2=round(prco_teto_med2,2)
+print(" O preço teto médio da ação 2 é de  R$",prco_teto_med2,"Reais")
+print(" ")
+print(" ")
+#2
+#3
+print(" ")
+val_acao3=float(input (" Infome quanto vale a ação 3 : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+print(" Não precisa colocar o sinal de porcentagem ( % ), informe apenas com numero")
+print(" ")
+d_yield3=float(input (" Infome quanto é o Dividend Yield da ação 3 : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+dividendo3=float(input (" Infome quanto é o Dividendo distribuido ultimamente pela ação 3 : "))
+print(" ")
+print(" ")
+prco_teto_med3=float(dividendo3/0.06)
+prco_teto_med3=round(prco_teto_med3,2)
+print(" O preço teto médio da ação 3 é de  R$",prco_teto_med3,"Reais")
+print(" ")
+print(" ")
+#3
+#4
+print(" ")
+val_acao4=float(input (" Infome quanto vale a ação 4 : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+print(" Não precisa colocar o sinal de porcentagem ( % ), informe apenas com numero")
+print(" ")
+d_yield4=float(input (" Infome quanto é o Dividend Yield da ação 4 : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+dividendo4=float(input (" Infome quanto é o Dividendo distribuido ultimamente pela ação 4 : "))
+print(" ")
+print(" ")
+prco_teto_med4=float(dividendo4/0.06)
+prco_teto_med4=round(prco_teto_med4,2)
+print(" O preço teto médio da ação 4 é de  R$",prco_teto_med4,"Reais")
+print(" ")
+print(" ")
+#4
+#5
+print(" ")
+val_acao5=float(input (" Infome quanto vale a ação 5 : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+print(" Não precisa colocar o sinal de porcentagem ( % ), informe apenas com numero")
+print(" ")
+d_yield5=float(input (" Infome quanto é o Dividend Yield da ação 5 : "))
+print(" ")
+print(" Por favor informe o numero decimal com ponto ( . ), não com ( , )")
+print(" ")
+dividendo5=float(input (" Infome quanto é o Dividendo distribuido ultimamente pela ação 5 : "))
+print(" ")
+print(" ")
+prco_teto_med5=float(dividendo5/0.06)
+prco_teto_med5=round(prco_teto_med5,2)
+print(" O preço teto médio da ação 5 é de  R$",prco_teto_med5,"Reais")
+print(" ")
+print(" ")
+#5
+
+d_yield_médio=((d_yield1+d_yield2+d_yield3+d_yield4+d_yield5)/5)
+d_yield_médio=round(d_yield_médio,2)
+print(" O Dividendo medio do conjunto das ações do investimento é de ",d_yield_médio,"% .")
+
+print(" ")
+
+
+soma_val_acao=(val_acao1+val_acao2+val_acao3+val_acao4+val_acao5)
+val_acao=soma_val_acao
+val_acao=round(val_acao,2)
+soma_dividendo=(dividendo1+dividendo2+dividendo3+dividendo4+dividendo5)
+dividendo=soma_dividendo
+dividendo=(((dividendo-(dividendo*30)/100)))
+dividendo=round(dividendo,2)
+print(" Você precisará de R$ ",val_acao,"Reais para cada bloco de açoes diversificadas")
+print(" ")
+print(" Você terá direito a R$ ",dividendo," Reais em dividendos ao ano por cada bloco de ações" )
+print("")
+val1=((ini1*dividendo)/val_acao)
+val2=((apo1*dividendo)/val_acao)
+apo1=round(apo1,2)
+val2=round(val2,2)
+print(" Para cada aporte de R$ ",apo1,"Reais para cada bloco de açoes diversificadas")
+print(" ")
+print(" Você terá direito a R$ ",val2," Reais em dividendos ao ano por cada aporte de R$" ,apo1,"Reais")
+print(" ")
+dividendo1=val1
+dividendo2=val2
+
+for c in range(0,temp1):
+    ini2=float(((dividendo1*dividendo1)/ini1))
+    round(ini2,2)
+    ini3=(ini1+ini2)
+    round(ini3,2)
+    ini3=ini3+val1
+    round(ini3,2)
+print("")
+
+
+for c in range(0,temp2):
+    apo2=float(((dividendo2*dividendo2)/apo1))
+    round(apo2,2)
+    apo3=(apo1+apo2)
+    round(apo3,2)
+    apo3=apo3+val2
+    round(apo3,2)
+print("")
+
+
+ini4=ini3
+apo4=apo3
+val1=val1*temp1
+val2=val2*temp2
+
+val3=(ini4+apo4+val1+val2)
+
+round(val3,2)
+
+aposentadoria1=val3
+aposentadoria1=round(aposentadoria1,2)
+aposentadoria2=(val3/12)
+aposentadoria2=round(aposentadoria2,2)
+aposentadoria3=(val3/22)
+aposentadoria3=round(aposentadoria3,2)
+aposentadoria4=(val3/23)
+aposentadoria4=round(aposentadoria4,2)
+aposentadoria5=(val3/30)
+aposentadoria5=round(aposentadoria5,2)
+
+print(" ")
+print(" Sua aposentadoria anual é de R$              ",aposentadoria1, "Reais")
+print(" ")
+print(" Sua aposentadoria mensal em 12 meses é de R$ ",aposentadoria2, "Reais")
+print(" ")
+print(" Sua aposentadoria mensal em 22 meses é de R$ ",aposentadoria3, "Reais")
+print(" ")
+print(" Sua aposentadoria mensal em 23 meses é de R$ ",aposentadoria4, "Reais")
+print(" ")
+print(" Sua aposentadoria mensal em 30 meses é de R$ ",aposentadoria5, "Reais")
+print(" ")
+
+print(" Pressione uma tecla para fechar ")
+
+input(" ")
